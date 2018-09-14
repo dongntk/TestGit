@@ -1,0 +1,68 @@
+// header
+.topbar {
+    position: relative;
+    z-index: 50;
+    box-shadow: 1px 0 7px rgba(0,0,0,.05);
+    background: $bgr-header;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+}
+a.logo {
+    color: transparent;
+    padding-left: 15px;
+    @media screen and (max-width: 767px) {
+    	padding-left: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+}
+.nav-toggle,
+.avatar {
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    color: $color-text;
+}
+.avatar{
+	width: 53px;
+	font-size: 1.25rem;
+	 @media screen and (max-width: 767px) {
+	border-left: 1px solid $color-border;
+
+	 }
+}
+.nav-toggle{
+	border-right: 1px solid $color-border;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    @media screen and (min-width: 768px) {
+    	width: 250px;
+	}
+	
+    .logo-icon {
+	    margin-right: 5px;
+	}
+	.logo-text{
+		@media screen and (max-width: 1169px) {
+			// display: none;
+		}
+	}
+}
+.user-account{
+	.title .h6{
+		margin-bottom: 0;
+		color: $color-text; 
+	}
+	.dropdown-toggle::after{
+		display: none;
+	}
+}

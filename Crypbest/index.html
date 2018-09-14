@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Plugin Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div id="main-wrapper">        
+        <header id="header" class="topbar d-flex align-items-center justify-content-between">
+            <div class="navbar-brand">
+                <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
+                <a href="index.html" class="logo">
+                    <!-- Logo icon -->
+                    <b class="logo-icon">
+                        <!-- Light Logo icon -->
+                        <img src="img/logo-light-icon.png" height="35" alt="homepage" class="logo">
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                        <!-- Light Logo text -->
+                        <img src="img/logo-light-text.png" height="35" class="logo" alt="homepage">
+                    </span>
+                </a>
+                <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
+                    <i class="icon-arrow-right icon-menu"></i>
+                </a>
+            </div>
+            <!-- User account dropdown -->
+            <div class="user-account dropdown">
+                <a id="dropdownAccount" class="dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="title d-none d-md-block">
+                        <h5 class="h6">BPC - 983763</h5>
+                    </div>
+                    <div class="avatar">
+                       <i class="icon-user"></i>
+                    </div>
+                    
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownAccount">
+                    <div class="triangle-with-shadow"></div>
+                    <a class="dropdown-item" href="#"><i class="icon-user"></i>Profile</a>
+                    <a class="dropdown-item" href="#"><i class="icon-settings"></i>Setting</a>
+                    <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <aside class="left-sidebar">
+            <div class="account-sidebar">
+                <p class="name">Akshay kumar</p>
+                <p class="lever">Medium</p>
+                <p class="hasVeri">Verifile</p>
+                <a href="#" class="btn btn-blue">account</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="list-unstyled">                    
+                    <li class="active"><a href="dashboard.html"><i class="icon-home"></i>Dashboard</a></li>
+                    <li>
+                        <a href="#submenu-0" aria-expanded="false" data-toggle="collapse"><i class="icon-home"></i>crypbest bot</a>
+                        <ul id="submenu-0" class="collapse list-unstyled">
+                            <li><a href="bottrading.html">Bottrading</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="icon-home"></i>netwok</a>
+                        <ul id="submenu-1" class="collapse list-unstyled">
+                            <li><a href="member.html">member</a></li>
+                            <li><a href="refferal.html">Refferal</a></li>
+                            <li><a href="binary-trees.html">Binary Trees</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="trading-platform.html"><i class="icon-home"></i>trading platform</a></li>
+                    <li><a href="support-tickets.html"><i class="icon-home"></i>support tickets</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page-wrapper">
+            <h4 class="page-title">Dashboard</h4>
+            <div class="block vallet-group">
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">CASH WALLET</h4>
+                        <p class="price-vallet">$115.53869384527</p>
+                    </div>
+                </div>
+                 <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">BBT WALLET</h4>
+                        <p class="coin-vallet">50 CBT</p>
+                        <p class="price-vallet">$0.5</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">COMMISSION WALLET</h4>
+                        <p class="price-vallet">$0.5</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">BONUS</h4>
+                        <p class="coin-vallet">3,000 CBT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block vallet-group item5">
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">PAIRING </h4>
+                        <p class="coinlr">(Left | Right)</p>
+                        <p class="price-vallet">$6,000 | $0</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">COMMISSION TEAM</h4>
+                        <p class="coinlr">Max: 20.000</p>
+                        <p class="price-vallet">$6,000 | $0</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">TODAY EARNING</h4>
+                        <p class="price-vallet">$0</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">TOTAL SALES</h4>
+                        <p class="price-vallet">$48,300</p>
+                    </div>
+                </div>
+                <div class="vallet-item">
+                    <div class="vallet">
+                        <h4 class="title-vallet">DIRECT REFERRAL</h4>
+                        <p class="price-vallet">17</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block upgrade">                
+                <h4 class="title-block">Upgrade Product</h4>
+                <div class="block-content">
+                   <div class="upgrade-item">
+                       <div class="row">
+                           <div class="col-md-4 col-sm-12">
+                               <img class="img-upgrade" src="https://previews-themeforest.imgix.net/files/253807727/00_Preview.png?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=ca85d87d00c1ca04b4915e0e8eddc2dc">
+                           </div>
+                           <div class="col-md-4 col-sm-12">
+                               <div class="infor">
+                                   <h5 class="title-upgrade">Basic</h5>
+                                   <p>
+                                       Trading Capacity :   $2000
+                                        Crypto Currencies   :   BTC-USDT, BTC-ALT
+                                        Crypto Exchange :   BINANCE, BITTREX
+                                        License Period  :   30 Days
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="col-md-4 col-sm-12">
+                               <div class="checkout">
+                                   <h2>100 USD</h2>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Plugin Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

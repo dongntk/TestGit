@@ -1,0 +1,103 @@
+.block{
+	background-color: $bgr-block;
+	border-radius: 5px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+
+}
+.vallet-group{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &.item5{
+    	margin-top: 20px;
+    	.vallet-item{
+    		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 calc(100%/5);
+		    flex: 0 0 calc(100%/5);
+		    max-width: calc(100%/5);
+		    @media (max-width: 1115px){
+			    -webkit-box-flex: 0;
+			    -ms-flex: 0 0 calc(100%/3);
+			    flex: 0 0 calc(100%/3);
+			    max-width: calc(100%/3);
+		    }
+		    @media (max-width: 900px){
+			    -webkit-box-flex: 0;
+			    -ms-flex: 0 0 calc(100%/2);
+			    flex: 0 0 calc(100%/2);
+			    max-width: calc(100%/2);
+		    }
+		    @media (max-width: 576px){        
+		       -webkit-box-flex: 0;
+			    -ms-flex: 0 0 calc(100%/1);
+			    flex: 0 0 calc(100%/1);
+			    max-width: calc(100%/1);
+			}
+    	}
+    }
+}
+.vallet-item{ 
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100%/4);
+    flex: 0 0 calc(100%/4);
+    max-width: calc(100%/4);
+    @media (max-width: 1115px){
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 calc(100%/2);
+	    flex: 0 0 calc(100%/2);
+	    max-width: calc(100%/2);
+    }
+	@media (max-width: 576px){        
+       -webkit-box-flex: 0;
+	    -ms-flex: 0 0 calc(100%/1);
+	    flex: 0 0 calc(100%/1);
+	    max-width: calc(100%/1);
+	}
+}
+.vallet{
+	margin: 20px 20px 15px;
+    
+	.title-vallet{
+		color: #ffffff;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.coin-vallet{
+		color: $color-orange;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	.price-vallet{
+		color: $text-gray;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	.coinlr{
+		color: $color-blue-blur;
+		font-size: 13px;
+		text-transform: capitalize;
+		margin-bottom: 0;
+	}
+}
+.upgrade{
+	margin-top: 20px;
+	overflow: hidden;
+	.title-block{
+		background-color: $bgr-headding;
+		color: $text-gray;
+		padding: 15px 20px;
+	    text-transform: capitalize;
+	    font-size: 20px;
+	}
+	.block-content{
+		padding: 20px;
+	}
+	.img-upgrade{
+		max-width: 100%;
+	}
+}
