@@ -65,9 +65,15 @@ body {
     &:focus {
     	box-shadow: none;
     }
+
 	&.btn-blue{
 		color: #ffffff;
 		background-color: $color-link;
+		&.btn-border{
+	    	border: 1px solid $color-link;
+	    	background-color: transparent;
+	    	color:  $color-link;
+	    }
 	}
 }
 
@@ -136,3 +142,35 @@ body {
 	}
 }
 
+// step
+
+.head-step {
+    display: flex;
+    border-bottom: 1px solid $color-border;
+        padding-bottom: 10px;
+    margin-bottom: 10px;
+    .number-step {
+    	background-color: $color-link;
+    	color: #ffffff;
+	    width: 35px;
+	    height: 35px;
+	    border-radius: 5px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin-right: 20px;
+	    font-size: 16px;
+	}
+	.inform-step{
+		color: $color-link;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.note-step{
+		font-size: 10px;
+		color: $color-gray;
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+}

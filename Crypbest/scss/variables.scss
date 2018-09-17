@@ -1,4 +1,11 @@
+$icomoon-font-family: "iconfont" !default;
+$icomoon-font-path: "../fonts" !default;
 
+$icon-support: "\e911";
+$icon-tranding: "\e912";
+$icon-crypbest: "\e913";
+$icon-network: "\e914";
+$icon-dashboard: "\e902";
 // MAIN
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -7,12 +14,15 @@ $breakpoint-xl: 1200px;
 $font-body: "MicroSquare";
 $color-text: rgba(255,255,255,.8);
 $color-link: #0084d4;
+$color-red: #f75535;
+$color-gray: #9caac1;
 $bgr-header: #262c36;
 $bgr-body: #2b3441;
 $bgr-sidebar: #1c222d;
 $color-title: #9caac1;
 $color-border: #515967;
-$bgr-block: #9caac1;
+$color-border-black: #262c36;
+$bgr-block: rgba(0, 0, 0, 0.1); //
 $bgr-dropdow: #515967;
 $bgr-headding: #515967;
 
