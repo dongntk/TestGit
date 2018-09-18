@@ -353,4 +353,11 @@
 	&.current{
 		display: block;
 	}
+	.checkout-content{
+		border: 1px solid $color-border;
+		padding: 20px;
+		border-radius: 5px;
+		margin-bottom: 30px;
+	}
+
 }

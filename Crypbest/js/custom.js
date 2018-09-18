@@ -9,14 +9,12 @@ $(document).ready(function() {
 
 	$('.btn-buy').click(function(){
 		var tab_id = $(this).attr('data-tab');	
-		$('.upgrade-inform').removeClass('hide');	
 		$('.checkout-cart').removeClass('current');
+		$('.checkout-item').removeClass('current');
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-		$("#"+tab_id).parent().find('.upgrade-inform').addClass('hide');
 	});
 	$('.btn-closebot').click(function(){
 		$('.checkout-cart').removeClass('current');
-		$('.upgrade-inform').removeClass('hide');
 	});
 });

@@ -54,7 +54,7 @@ body {
 }
 // btn
 .btn{
-	min-width: 145px;
+	min-width: 100px;
     padding: 5px 10px;
     border-radius: 4px;
     font-style: initial;
@@ -173,4 +173,30 @@ body {
 		font-weight: 300;
 		margin-bottom: 0;
 	}
+}
+
+// padding-bottom
+.page-link{
+	border-radius: 4px;
+    border: solid 1px #262c36;
+    line-height: 16px;
+    text-align: center;
+    height: 30px;
+    padding: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,.8);
+    background-color: $bgr-dropdow;
+    min-width: 29px;
+    border-radius: 0;
+}
+.page-item.disabled .page-link{
+	color: rgba(255,255,255,.8);
+    background-color: $bgr-dropdow;
+    border: solid 1px $bgr-dropdow;
+}
+.page-item.active .page-link {
+    border-color: #9caac1;
+    color: #2b3441;
+    background-color: #9caac1;
+    z-index: 0;
 }

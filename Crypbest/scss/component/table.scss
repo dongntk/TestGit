@@ -2,9 +2,21 @@
   border: 1px solid $color-border;
   border-radius: 3px;
 }
+.table td{
+    padding: 5px;
+}
+.table th {
+    padding: 8px 5px;
+}
+.table-striped tbody tr:hover {
+    background-color: rgba(0,132,212,.08);
+}
 .dataTables_length{
       padding-left: 20px;
     padding-top: 15px;
+     select.form-control{
+    padding-right: 30px;
+  }
 }
 .dataTables_info{
       padding-left: 20px;
@@ -21,4 +33,47 @@
 }
 table thead th{
   border: 0;
+}
+.table-bordered tbody th {
+  font-size: 13px;
+
+}
+.table-responsive{
+  .btn{
+    height: 29px !important;
+    padding: 0 10px;
+    border-radius: 4px;
+  }
+  .form-control{
+    height: 29px !important;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: $color-title;
+    border: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+ 
+}
+.table-bordered tbody td{
+    border-bottom-width: 1px;
+    border-color: $bgr-sidebar;
+    font-size: 13px;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid $color-border;
+}
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.table-bordered thead th {
+    border-bottom-width: 0;
+}
+.table-bordered {
+    border: 1px solid $color-border;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
 }
