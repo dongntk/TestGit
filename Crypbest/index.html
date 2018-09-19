@@ -175,21 +175,74 @@
                            </div>
                         </div>
                       </div> 
-                      <div class="tab-a col-lg-12 col-md-12 checkout-cart ">
+                      <div class="tab-a col-lg-12 col-md-12 checkout-cart">
                         <div class="checkout-content" >
                           
-                            <div id="tab-1a" class="tab-a checkout-item">
+                            <div id="tab-a" class="tab-a checkout-item">
                               <div class="head-step">
-                                <div class="number-step">2</div>
+                                <div class="number-step">1</div>
                                 <div class="inform-step">Step 1 
                                   <p class="note-step">Choose operation</p>
                                 </div>
                               </div>
-                              <button  data-tab="tab-2a" class="btn btn-buy btn-border btn-blue">BUY 3</button>
+                              <div class="content-step">
+                                <h3 class="name-bot">Basi Bot</h3>
+                                <p>Total: <span>$100</span></p>
+                                <div class="form-check">
+                                  <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the above terms and conditions</label>
+                                </div>
+                                <button  data-tab="tab-2a" class="btn btn-next btn-border btn-blue">NEXT</button>
+                              </div>
                             </div>
                             <div id="tab-2a" class="checkout-item">
+                              <div class="head-step"><div class="number-step">2</div><div class="inform-step">Step 2 <p class="note-step">Choose operation</p></div></div>
+                              <div class="content-step">
+                                <div class="select-pay">
+                                  <label class="paywith">Pay with:</label>
+                                  <select>
+                                    <option value="Cash">Cash Wallet</option>
+                                    <option value="Commision">Commision Wallet</option>
+                                    <option value="BitCoin">BitCoin BTC</option>
+                                  </select>
+                                </div>
+                               
+                                <button  data-tab="tab-a" class="btn btn-prev btn-border btn-blue">PREVIOUS</button>
+                                <button  data-tab="tab-3a" class="btn btn-next btn-border btn-blue">NEXT</button>
+                              </div>
+                            </div>
+                            <div id="tab-3a" class="checkout-item">
                               <div class="head-step"><div class="number-step">3</div><div class="inform-step">Step 3 <p class="note-step">Choose operation</p></div></div>
-                              <button class="btn btn-closebot btn-border btn-blue">BUY 4</button>
+                              <div class="content-step">
+                                  <p><span class="title-coin">Amount USD:</span> <span class="value-coin">$100</span></p>
+                                  <p><span class="title-coin">Amount BTC:</span> <span class="value-coin">$100</span>BTC</p>
+                                  <p class="note">1BTC ~ $6000</p>
+                               
+                                 <button  data-tab="tab-2a" class="btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                                 <button  data-tab="tab-4a" class="btn btn-buy btn-border btn-blue">NEXT</button>
+                               
+                              </div>
+                              
+                            </div>
+                            <div id="tab-4a" class="checkout-item">
+                              <div class="head-step"><div class="number-step">3</div><div class="inform-step">Step 3 <p class="note-step">Choose operation</p></div></div>
+                              <div class="content-step">
+                                  <p>To replenish your current account via BitCoin send <span class="number">0,0000168 BTC</span></p>
+                                  <form class="form-inline align-justify-center">
+                                    <input type="text" class="form-control" readonly="" placeholder="https://horecacoin.co/ref/username" id="introduce">
+                                    <button onclick="copyToClipboard('#introduce')" class="btn-copy">Copy</button>
+
+                                  </form>
+                                  <div class="text-center">
+                                    <img class="img-qr" src="img/qr.jpg" alt="qr" height="142" width="142">
+                                  </div>
+                                  <div class="waitting align-justify-center">
+                                    <img class="img-qr" src="img/ajax_loading.gif" alt="Smiley face" height="15">
+                                    <span>Waiting pay ment from you ...</span>
+                                  </div>
+                                 <p>You need to have <span>03</span> conformation from BlockChain</p>
+                                <button class="btn btn-closebot btn-border btn-blue">HASH</button>
+                              </div>
+                              
                             </div>
                          </div>
                       </div>
@@ -201,23 +254,23 @@
                               </div>
                                <div class="col-lg-6 col-md-12">   
                                 <div class="infor">
-                                       <h4 class="title-upgrade">Basic</h4>
-                                       <div class="price d-flex justify-content-between">100 USD <span class="date">365 day</span></div>
-                                       <ul class="informdetails">
-                                           <li>
-                                               Trading Capacity :   $2000
-                                           </li>
-                                           <li>
-                                               Crypto Currencies   :   BTC-USDT, BTC-ALT
-                                           </li>
-                                           <li>
-                                               Crypto Exchange :   BINANCE, BITTREX
-                                           </li>
-                                           <li>
-                                               License Period  :   30 Days
-                                           </li>
-                                       </ul>
-                                       <button  data-tab="tab-b" class="btn btn-buy btn-border btn-blue">BUY</button>
+                                     <h4 class="title-upgrade">Basic</h4>
+                                     <div class="price d-flex justify-content-between">100 USD <span class="date">365 day</span></div>
+                                     <ul class="informdetails">
+                                         <li>
+                                             Trading Capacity :   $2000
+                                         </li>
+                                         <li>
+                                             Crypto Currencies   :   BTC-USDT, BTC-ALT
+                                         </li>
+                                         <li>
+                                             Crypto Exchange :   BINANCE, BITTREX
+                                         </li>
+                                         <li>
+                                             License Period  :   30 Days
+                                         </li>
+                                     </ul>
+                                     <button  data-tab="tab-b" class="btn btn-buy btn-border btn-blue">BUY</button>
                                 </div>
                                </div>
                              </div>

@@ -365,5 +365,50 @@
 			}
 		}
 	}
+	.select-pay{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 30px 0;
+		.paywith{
+			margin-bottom: 0;
+		}
+		select{
+			width: 250px;
+			height: 29px !important;
+		    padding: 0 10px;
+		    border-radius: 4px;
+		    background-color: #9caac1;
+		    border: 0;
+		    margin-left: 20px;
+		}
+	}
+	.form-inline{
+		margin-bottom: 30px;
+	}
+	.form-control{
+		width: 250px;
+		height: 29px !important;
+	    padding: 0 10px;
+	    border-radius: 4px;
+	    background-color: #9caac1;
+	    border: 0;
+	    margin-right: 5px;
+	    font-size: 13px;
+	    &:focus{
+	    	box-shadow: none;
+	    }
+	}
+	.btn{
+		height: 29px;
+		padding: 0;
+		font-size: 13px;
+	}
+	.waitting{
+		margin-top: 30px;
+		.img-qr{
+			margin-right: 5px;
+		}
+	}
 
 }
