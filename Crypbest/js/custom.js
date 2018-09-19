@@ -7,11 +7,17 @@ $(document).ready(function() {
     });
 
 
-	$('.btn-buy').click(function(){
+	$('.upgrade-bot .btn-buy').click(function(){
 		var tab_id = $(this).attr('data-tab');	
 		$('.checkout-cart').removeClass('current');
 		$('.checkout-item').removeClass('current');
+		// $('#tab-1a').addClass('current');
 		$(this).addClass('current');
+		$("."+tab_id).addClass('current');
+	});
+	$('.checkout-content .btn-buy').click(function(){
+		var tab_id = $(this).attr('data-tab');
+		$(this).parent().removeClass('current');
 		$("#"+tab_id).addClass('current');
 	});
 	$('.btn-closebot').click(function(){

@@ -358,6 +358,12 @@
 		padding: 20px;
 		border-radius: 5px;
 		margin-bottom: 30px;
+		.checkout-item{
+			display: none;
+			&.current{
+				display: block;
+			}
+		}
 	}
 
 }
