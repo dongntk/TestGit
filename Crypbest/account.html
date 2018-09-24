@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons/favicon.png">
+    <!-- Plugin Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Account</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <header id="header" class="topbar d-flex align-items-center justify-content-between">
+        <div class="navbar-brand">
+          <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
+          <a href="index.html" class="logo">
+            <!-- Logo icon -->
+            <b class="logo-icon">
+            <!-- Light Logo icon -->
+            <img src="img/logo-light-icon.png" height="35" alt="homepage" class="logo">
+            </b>
+            <!--End Logo icon -->
+            <!-- Logo text -->
+            <span class="logo-text">
+              <!-- Light Logo text -->
+              <img src="img/logo-light-text.png" height="35" class="logo" alt="homepage">
+            </span>
+          </a>
+          <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
+            <i class="icon-arrow-right icon-menu"></i>
+          </a>
+        </div>
+        <!-- User account dropdown -->
+        <div class="user-account dropdown">
+          <a id="dropdownAccount" class="dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="title d-none d-md-block">
+              <h5 class="h6">BPC - 983763</h5>
+            </div>
+            <div class="avatar">
+              <i class="icon-user"></i>
+            </div>
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownAccount">
+            <div class="triangle-with-shadow"></div>
+            <a class="dropdown-item" href="#"><i class="icon-user"></i>Profile</a>
+            <a class="dropdown-item" href="#"><i class="icon-settings"></i>Setting</a>
+            <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <aside class="left-sidebar">
+        <div class="account-sidebar">
+          <p class="name">Akshay kumar</p>
+          <p class="lever">Medium</p>
+          <p class="hasVeri">Verifile</p>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="list-unstyled">
+            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i>Dashboard</a></li>
+            <li><a href="account.html"><i class="icon-user"></i>Account</a></li>
+            <li><a href="bottrading.html"><i class="ic-crypbest"></i>Bottrading</a></li>
+            <li>
+              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i>networt</a>
+              <ul id="submenu-1" class="collapse list-unstyled">
+                <li><a href="member.html">member</a></li>
+                <li><a href="refferal.html">Refferal</a></li>
+                <li><a href="binary-trees.html">Binary Trees</a></li>
+              </ul>
+            </li>
+            <li><a href="trading-platform.html"><i class="ic-tranding"></i>trading platform</a></li>
+            <li><a href="support-tickets.html"><i class="ic-support"></i>support tickets</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="page-wrapper">
+        <h4 class="page-title">Account</h4>
+         <div class="block">
+            <div class="pad-block checkout-cart">               
+              <div id="account" class="checkout-item">
+                <div class="content-step">
+                  <div class="select-pay">
+                    <label class="paywith">Choose operation:</label>
+                    <select id="operation" name="operation">
+                      <option value='null'>- choose -</option>
+                      <option value="Deposit">Deposit</option>
+                      <option value="Withdraw">Withdraw</option>
+                      <option value="Transfer">Transfer</option>
+                      <option value="Convert">Convert</option>
+                    </select>
+                  </div>
+                  <button id="btn-operation"  class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Deposit" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">1</div>
+                  <div class="inform-step">Step 1
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount USD:</div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "100"></div>
+                  </div>
+                  <div class="row mt-3 justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Amount BTC:</span></div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">0.123456789</span></div>
+                  </div>
+                  <p class="note mt-3">1BTC ~ $6000</p>
+                  
+                  <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Withdraw" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">1</div>
+                  <div class="inform-step">Step 1
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                  <div class="select-pay">
+                    <label class="paywith">Choose from wallet:</label>
+                    <select>
+                      <option value="Cash">Cash Wallet</option>
+                      <option value="Commision">Commision Wallet</option>
+                    </select>
+                  </div>
+                  
+                  <button  data-tab="account" class="btnModal btn btn-prev btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="Withdraw-step2" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Withdraw-step2" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">2</div>
+                  <div class="inform-step">Step 2
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to withdraw USD:</div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "100"></div>
+                  </div>
+                  <div class="row mt-3 mb-3 justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Bitcoin Address:</span></div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">.............</span></div>
+                  </div>
+                  
+                  <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Withdraw-step3" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">3</div>
+                  <div class="inform-step">Step 3
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                  <div class="d-flex mb-3 justify-content-center align-items-center">
+                    <div class="title-coin text-right">Enter 2FA:</div> 
+                    <div class="ml-2 text-left"><input type="text" class="form-control" value= "100"></div>
+                  </div>
+                  <button  data-tab="Withdraw-step2" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="confirm-email" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="confirm-email" class="modal-bot checkout-item hide">                
+                <div class="content-step">
+                  <div class="d-flex mb-3 justify-content-center align-items-center">
+                    <div class="title-coin text-right"><i class="icon icon-check"></i></div> 
+                    <div class="ml-2 text-left">We will send a confirmtion email<br>Please then click on the confirmtion link in your email!</div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Transfer" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">1</div>
+                  <div class="inform-step">Step 1
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                 <div class="content-step">
+                  <div class="select-pay">
+                    <label class="paywith">Choose from wallet:</label>
+                    <select>
+                      <option value="Cash">Cash Wallet</option>
+                      <option value="Commision">Commision Wallet</option>
+                    </select>
+                  </div>
+                  
+                  <button  data-tab="account" class="btnModal btn btn-prev btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="Transfer-step2" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Transfer-step2" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">2</div>
+                  <div class="inform-step">Step 2
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                   <p class="note mt-3">You have 2000 USD available for transfer</p>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to Transfer USD:</div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= ""></div>
+                  </div>
+                  <div class="row mt-3 mb-3 justify-content-center ">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Username Address:</span></div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "Kevin"><p class="namefull">Tran Thanh Sang</p></div>
+                  </div>
+                  
+                  <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                </div>
+              </div>
+              <div id="Convert" class="modal-bot checkout-item hide">
+                <div class="head-step">
+                  <div class="number-step">1</div>
+                  <div class="inform-step">Step 1
+                    <p class="note-step">Choose operation</p>
+                  </div>
+                </div>
+                <div class="content-step">
+                   <p class="note mt-3">You have 3000 BBT available for convert</p>
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to Convert BBT:</div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= ""></div>
+                  </div>
+                  <div class="row mt-3 mb-3 justify-content-center ">
+                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Amount USD:</span></div> 
+                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">$10.000</span></div>
+                  </div>
+                  <p class="note mt-3">1BBT ~ $0.001</p>
+                  <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                  <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                </div>
+              </div>              
+          </div>                
+         </div>
+      </div>
+    </div>
+    <!-- modal -->
+    
+    <div id="modal-bot" class="modal-bot popup">
+      <div class="popup-overlay"></div>
+      <div class="popup-container">
+        <div class="popup-inner">
+          <button title="Close" type="button" class="close-modal" data-close>×</button>
+          <div class="checkout-cart" >
+            <div id="tab-a" class="modal-bot checkout-item hide">
+              <div class="head-step">
+                <div class="number-step">1</div>
+                <div class="inform-step">Step 1
+                  <p class="note-step">Choose operation</p>
+                </div>
+              </div>
+              <div class="content-step">
+                <h3 class="name-bot">Basi Bot</h3>
+                <p>Total: <span>$100</span></p>
+                <div class="form-check">
+                  <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the above terms and conditions</label>
+                </div>
+                <button  data-tab="tab-2a" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+              </div>
+            </div>
+            <div id="tab-2a" class="checkout-item hide">
+              <div class="head-step"><div class="number-step">2</div><div class="inform-step">Step 2 <p class="note-step">Choose operation</p></div></div>
+              <div class="content-step">
+                <div class="select-pay">
+                  <label class="paywith">Pay with:</label>
+                  <select>
+                    <option value="Cash">Cash Wallet</option>
+                    <option value="Commision">Commision Wallet</option>
+                    <option value="BitCoin">BitCoin BTC</option>
+                  </select>
+                </div>
+                
+                <button  data-tab="tab-a" class="btnModal btn btn-prev btn-border btn-blue">PREVIOUS</button>
+                <button  data-tab="tab-3a" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+              </div>
+            </div>
+            <div id="tab-3a" class="checkout-item hide">
+              <div class="head-step"><div class="number-step">3</div><div class="inform-step">Step 3 <p class="note-step">Choose operation</p></div></div>
+              <div class="content-step">
+                <p><span class="title-coin">Amount USD:</span> <span class="value-coin">$100</span></p>
+                <p><span class="title-coin">Amount BTC:</span> <span class="value-coin">$100</span>BTC</p>
+                <p class="note">1BTC ~ $6000</p>
+                
+                <button  data-tab="tab-2a" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
+                <button  data-tab="tab-4a" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+              </div>
+            </div>
+            <div id="tab-4a" class="checkout-item hide">
+              <div class="head-step"><div class="number-step">3</div><div class="inform-step">Step 3 <p class="note-step">Choose operation</p></div></div>
+              <div class="content-step">
+                <p>To replenish your current account via BitCoin send <span class="number">0,0000168 BTC</span></p>
+                <form class="form-inline align-justify-center">
+                  <input type="text" class="form-control" readonly="" placeholder="sdfuye8y8jhjhhskjlkjs380jk">
+                  <button class="btn-copy btn btn-primary">COPY</button>
+                </form>
+                <div class="text-center">
+                  <img class="img-qr" src="img/qr.jpg" alt="qr" height="142" width="142">
+                </div>
+                <div class="waitting align-justify-center">
+                  <img class="img-qr" src="img/ajax_loading.gif" alt="Smiley face" height="15">
+                  <span>Waiting pay ment from you ...</span>
+                </div>
+                <p>You need to have <span>03</span> conformation from BlockChain</p>
+                <button class="btn btn-border btn-blue close-modal">CHECK</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plugin Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- table Bootstrap-->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <!-- Main JS-->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#activity').DataTable();
+    
 	$('.nav-toggle').click(function() {
         $('#main-wrapper').toggleClass('show-sidebar');
         $(this).find('.icon-close').toggleClass('icon-menu');
@@ -7,28 +7,41 @@ $(document).ready(function() {
     });
 
 
-	$('.upgrade-bot .btn').click(function(){
-		var tab_id = $(this).attr('data-tab');	
-		$('.checkout-cart').removeClass('current');
-		$('.checkout-item').removeClass('current');
-		$(this).addClass('current');
-		$("."+tab_id).addClass('current');
-	});
-	$('.checkout-content .btn').click(function(){
+	
+	$('.checkout-cart .btnModal').click(function(){		
 		var tab_id = $(this).attr('data-tab');
-		$('.checkout-item').removeClass('current');
-		$(this).parent().removeClass('current');
-		$("#"+tab_id).addClass('current');
+		$(this).parent().parent().addClass('hide');
+		$("#"+tab_id).removeClass('hide');
 	});
-	$('.btn-closebot').click(function(){
-		$('.checkout-cart').removeClass('current');
+	$('.close-modal').click(function(){
+		$('.checkout-item').addClass('hide');
+	});
+	$(".modal-trigger").click(function(e){
+	  e.preventDefault();
+	  dataModal = $(this).attr("data-modal");
+	  $("#" + dataModal).css({"display":"block"});
+	  $("." + dataModal).removeClass('hide');
+	  // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
 	});
 
-	function copyToClipboard(element) {
-	  var $temp = $("<input>");
-	  $("body").append($temp);
-	  $temp.val($(element).text()).select();
-	  document.execCommand("copy");
-	  $temp.remove();
-	}
+	$(".close-modal, .modal-sandbox").click(function(){
+	  $(".popup").css({"display":"none"});
+	  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+	});
+
+
+	 $("#operation").change(function () {
+        var color = $(this);
+        var v = (color.val()); 
+        $('#btn-operation').attr( "data-tab", function() {
+		  return "" + v;
+		});
+    });
 });
+
+function operation() {
+
+    // var s = document.getElementById("operation");
+    // var operation = s.options[s.selectedIndex].text;
+    // window.alert('equals to ' + operation);
+}

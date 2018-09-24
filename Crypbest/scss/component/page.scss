@@ -1,5 +1,15 @@
 // min 768px max 1199px
-
+button, button:active, button:focus {
+    box-shadow: none;
+    outline: 0;
+}
+a, a:hover, button, img, img:hover, input[type=button], input[type=submit] {
+    transition: all .3s ease 0s;
+}
+button, html input[type=button], input[type=submit], input[type=reset] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
 a{
 	color: $color-link;
 	-webkit-transition: all 0.3s;
@@ -59,7 +69,7 @@ body {
 }
 // btn
 .btn{
-	min-width: 100px;
+	min-width: 70px;
     padding: 5px 10px;
     border-radius: 4px;
     font-style: initial;
@@ -148,8 +158,39 @@ body {
 }
 
 // step
+.form-check{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+	input[type=checkbox], input[type=radio]{
+		    width: 35px;
+    height: 18px;
+	}
+	label{
+		    margin-bottom: 0;
+	}
+}
 .content-step{
 		text-align: center;
+		padding-top: 20px;
+		.namefull{
+			font-size: 12px;
+		    font-style: italic;
+		    color: $color-red;
+		    margin-top: 5px;
+
+		}
+		.title-coin{
+			.icon-check{
+				color: $color-link;
+				width: 50px;
+			    height: 50px;
+			    padding: 8px;
+				border: 1px solid $color-link;
+				border-radius: 50%;
+			}
+		}
 	}
 .head-step {
     display: flex;

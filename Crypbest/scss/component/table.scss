@@ -11,6 +11,12 @@
 .table-striped tbody tr:hover {
     background-color: rgba(0,132,212,.08);
 }
+.table-striped tbody tr:first-child{
+  .table-bordered td{
+
+  border-top: 1px solid $color-border;
+  }
+}
 .dataTables_length{
       padding-left: 20px;
     padding-top: 15px;
@@ -47,7 +53,7 @@ table thead th{
   .form-control{
     height: 29px !important;
     padding: 0 10px;
-    border-radius: 4px;
+    border-radius: 0;
     background-color: $color-title;
     border: 0;
     &:focus {
@@ -58,15 +64,14 @@ table thead th{
 }
 .table-bordered tbody td{
     border-bottom-width: 1px;
-    border-color: $bgr-sidebar;
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
 }
 .table-bordered td, .table-bordered th {
     border: 1px solid $color-border;
 }
 table.table-bordered.dataTable th, table.table-bordered.dataTable td {
     border-left-width: 0;
-    border-right-width: 0;
 }
 .table-bordered thead th {
     border-bottom-width: 0;
@@ -76,4 +81,12 @@ table.table-bordered.dataTable th, table.table-bordered.dataTable td {
     border-left: 0;
     border-right: 0;
     border-top: 0;
+}
+
+// 
+#activity{
+  table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
+    
+    display: none;
+  }
 }

@@ -3,6 +3,9 @@
 	border-radius: 5px;
 	margin-bottom: 30px;
 	overflow: hidden;
+	.pad-block{
+		padding: 20px;
+	}
 	// box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 	.title-block{
 		color: $color-text;
@@ -257,6 +260,13 @@
     		display: flex;
 		    justify-content: center;
 		    align-items: center;
+		    .pad-pack{
+		    	min-height: 66px;
+			    text-align: center;
+			    justify-content: center;
+			    display: inline-grid;
+			    align-items: center;
+		    }
     		p{
     			margin-bottom: 0;
     		}
@@ -265,6 +275,7 @@
 			    padding: 0 5px;
 			    margin: 5px 0;
 			    font-size: 10px;
+			    display: inline-block;
 			    &.complete{
 			    	background-color: $color-link;
 			    }
@@ -274,9 +285,6 @@
 			    }
 			}
     		.date{
-    			position: absolute;
-			    top: -20px;
-			    right: 0;
 			    font-size: 10px;
     		}
     	}
@@ -342,28 +350,49 @@
 
 }
 .invest{
-	
+	.invest-item{
+		border: 1px solid $color-border;
+		margin-bottom: 20px;
+		.btn-invest{
+			font-size: 14px;
+		    padding: 1px 8px;
+		    min-width: auto;
+		}
+		.row-item{
+		border-top: 1px solid $color-border;
+			&:first-child{
+				border-top: 0;
+			}
+		}
+		.profit{
+			color: $color-link;
+				font-size: 16px;
+				text-transform: uppercase;
+		}
+		.price{
+				color: $color-red;
+				font-size: 16px;
+			}
+		.col-item{
+			width: calc(100%/3);
+			border-left: 1px solid $color-border;
+
+			&:first-child{
+				border-left: 0;
+			}
+		}
+	}
 
 }
 .checkout-cart{
 	width: 100%;
 	border: 0;
 	box-shadow: none;
-	display: none;
-	&.current{
-		display: block;
-	}
-	.checkout-content{
-		border: 1px solid $color-border;
-		padding: 20px;
-		border-radius: 5px;
-		margin-bottom: 30px;
-		.checkout-item{
-			display: none;
-			&.current{
-				display: block;
-			}
+	.checkout-item{
+		&.hide{
+		display: none;
 		}
+		display: block;
 	}
 	.select-pay{
 		display: flex;
@@ -395,6 +424,7 @@
 	    border: 0;
 	    margin-right: 5px;
 	    font-size: 13px;
+	    text-transform: uppercase;
 	    &:focus{
 	    	box-shadow: none;
 	    }
