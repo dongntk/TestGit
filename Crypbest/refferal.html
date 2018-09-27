@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Plugin Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <header id="header" class="topbar d-flex align-items-center justify-content-between">
+        <div class="navbar-brand">
+          <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
+          <a href="index.html" class="logo">
+            <!-- Logo icon -->
+            <b class="logo-icon">
+            <!-- Light Logo icon -->
+            <img src="img/logo-light-icon.png" height="35" alt="homepage" class="logo">
+            </b>
+            <!--End Logo icon -->
+            <!-- Logo text -->
+            <span class="logo-text">
+              <!-- Light Logo text -->
+              <img src="img/logo-light-text.png" height="35" class="logo" alt="homepage">
+            </span>
+          </a>
+          <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
+            <i class="icon-arrow-right icon-menu"></i>
+          </a>
+        </div>
+        <!-- User account dropdown -->
+        <div class="user-account dropdown">
+          <a id="dropdownAccount" class="dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="title d-none d-md-block">
+              <h5 class="h6">BPC - 983763</h5>
+            </div>
+            <div class="avatar">
+              <i class="icon-user"></i>
+            </div>
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownAccount">
+            <div class="triangle-with-shadow"></div>
+            <a class="dropdown-item" href="#"><i class="icon-user"></i>Profile</a>
+            <a class="dropdown-item" href="#"><i class="icon-settings"></i>Setting</a>
+            <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <aside class="left-sidebar">
+        <div class="account-sidebar">
+          <p class="name">Akshay kumar</p>
+          <p class="lever">Medium</p>
+          <p class="hasVeri">Verifile</p>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="list-unstyled">
+            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
+            <li><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
+            <li><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
+            <li>
+              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span>networt</span></a>
+              <ul id="submenu-1" class="collapse list-unstyled">
+                <li><a href="member.html"><span>member</span></a></li>
+                <li><a href="refferal.html"><span>Refferal</span></a></li>
+                <li><a href="binary-trees.html"><span>Binary Trees</span></a></li>
+              </ul>
+            </li>
+            <li><a href="trading-platform.html"><i class="ic-tranding"></i><span>trading platform</span></a></li>
+            <li><a href="support-tickets.html"><i class="ic-support"></i><span>support tickets</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="page-wrapper">
+        <h4 class="page-title">Bottrading</h4>
+            <h5> Admin Crypbest</h5>
+              <p>Total Member : 1000</p>  
+              <div id="Tree-js">
+                <ul>
+                  <li data-jstree='{"opened":true, "type":"demo"}'>
+                      BPC35d67h78h<span class="number-lever">4</span><span class="text-lever">Platinum</span>
+                    <ul>
+                      <li data-jstree='{"opened":true, "type":"demo"}'>
+                          BPC35d67h78h<span class="number-lever">2</span><span class="text-lever">Bronze</span>
+                          <ul>
+                              <li>
+                                  BPC35d67h78h<span class="number-lever">0</span><span class="text-lever">NewComer</span>
+                              </li>
+                              <li>
+                                  BPC35d67h78h<span class="number-lever">0</span><span class="text-lever">NewComer</span>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          BPC35d67h78h<span class="number-lever">0</span><span class="text-lever">Silver</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-jstree='{"opened":true, "type":"demo"}'>
+                      BPC35d67h78h<span class="number-lever">2</span><span class="text-lever">Silver</span>
+                    <ul>
+                      <li>
+                          BPC35d67h78h<span class="number-lever">0</span><span class="text-lever">gold</span>
+                      </li>
+                      <li>
+                          BPC35d67h78h<span class="number-lever">0</span><span class="text-lever">gold</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+      </div>
+    </div>
+    
+    <!-- Plugin Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- table Bootstrap-->
+    <!-- <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $('#activity').DataTable();
+    </script> -->
+    <script src="js/jstree.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script >
+       // tree js
+       $('#Tree-js').jstree({
+        "types" : {
+          "default" : {
+            "icon" : "fa fa-user"
+          },
+          "demo" : {
+            "icon" : "fa fa-users"
+          }
+        },
+        "plugins" : ["types"]
+      });
+      
+    </script>
+    <!-- Main JS-->
+  </body>
+</html>

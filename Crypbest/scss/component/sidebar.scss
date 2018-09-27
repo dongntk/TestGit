@@ -4,9 +4,73 @@
     overflow: hidden;
     &.show-sidebar {
         .left-sidebar {
-            left: -250px;
-            + .page-wrapper {
-                margin-left: 0;
+            @media screen and (min-width: 768px) {
+                left: 0;
+                width: 76px;
+                + .page-wrapper {
+                    margin-left: 76px;
+                }
+                &:hover{
+                    width: 203px;
+                   .list-unstyled{
+                        li ul li{
+                            position: relative;
+                            &:before{
+                                display: none;
+                            }
+                            span{
+                                display: inline-block;
+                                opacity: 1;
+                            }
+                        }
+                        li a {
+                            text-align: left;
+                            &[data-toggle="collapse"]:after {
+                                display: inline-block;
+                            }
+                            span{
+                                display: inline-block;
+                            }
+                            i{
+                                margin-right: 15px;
+                            }
+                        }
+                    } 
+                }
+                .list-unstyled{
+                    >li >a {
+                        text-align: center;
+                        &[data-toggle="collapse"]:after {
+                            display: none;
+                        }
+                        >span{
+                            display: none;
+                            white-space: nowrap;
+                        }
+                        i{
+                            margin-right: 0;
+                        }
+                    }
+                    li ul li{
+                        position: relative;
+                        &:before{
+                            content: '...';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            color: #fff;
+                            width: 76px;
+                            text-align: center;
+                            z-index: 2;
+                            font-size: 25px;
+                        }
+                        span{
+                            display: inline-block;
+                            opacity: 0;
+                        }
+                    }
+                }
             }
             @media screen and (max-width: 767px) {
                 left: 0;
@@ -15,7 +79,10 @@
                    margin-left: 0;
                 }
             }
+           
         }
+
+        
     }
 }
 .left-sidebar {
@@ -23,7 +90,7 @@
     overflow: auto;
     height: calc(100vh - 42px);
         position: fixed;
-    width: 250px;
+    width: 203px;
     left: 0;
     height: 100%;
     top: 0;
@@ -34,14 +101,14 @@
     transition: .2s ease-in;
     
     + .page-wrapper {
-	    margin-left: 250px;
+	    margin-left: 203px;
         padding: 20px;
         padding-top: 64px;
         transition: .2s ease-in;
 	}
     @media screen and (max-width: 767px) {
-        width: 250px;
-        left: -250px ;
+        width: 203px;
+        left: -203px ;
         + .page-wrapper {
             margin-left: 0;
         }
@@ -56,7 +123,7 @@
     @media screen and (min-width: 768px) and (max-width: 1169px) {
         left: 0;
         + .page-wrapper {
-            margin-left: 250px;
+            margin-left: 203px;
         }
     }
 }
@@ -66,24 +133,24 @@
     text-align: center;
     padding: 10px;
     font-style: italic;
-    margin-top: 20px;
+    padding-top: 0;
     p{
         margin-bottom: 0;
     }
     .name{
         text-transform: uppercase;
+        padding-top: 15px;
     }
     .lever{
         color: $color-link;
     }
     .hasVeri{
         color: $color-link;
-        margin-bottom: 20px;
     }
 }
 // list nav
 .sidebar-nav{
-    margin-top: 20px;
+    margin-top: 10px;
     ul {
         margin: 0px;
         padding: 0px;
@@ -118,7 +185,10 @@
                 overflow: hidden;
                 transition: all 0.5s;
                 position: relative;
-                
+                white-space: nowrap;
+                span{
+                    white-space: nowrap;
+                }
                 &[data-toggle="collapse"]:after {
                     content: "\e649";
                     display: inline-block;
@@ -152,6 +222,7 @@
                     top: -2px;
                     transition: margin 0.5s;
                 }
+
             }
         }
     }

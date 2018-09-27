@@ -1,4 +1,17 @@
 // header
+.show-sidebar{
+    .logo-text{
+        @media screen and (min-width: 768px){
+            display: none;
+        }
+    }
+    .navbar-brand{
+        @media screen and (min-width: 768px){
+            width: 125px;
+        }
+    }
+}
+
 .topbar {
     position: relative;
     z-index: 50;
@@ -7,20 +20,30 @@
     height: 64px;
     position: fixed;
     width: 100%;
+     @media screen and (max-width: 767px) {
+        border-bottom: 1px solid $color-border;
+    }
 }
 a.logo {
     color: transparent;
-    padding-left: 15px;
+    text-align: center;
+    display: block;
+    width: 77%;
     @media screen and (max-width: 767px) {
     	padding-left: 0;
 	    width: 100%;
 	    text-align: center;
 	}
 }
+.nav-toggle{
+    @media screen and (min-width: 768px){
+        background: $bgr-header;
+    }
+}
 .nav-toggle,
 .avatar {
     width: 62px;
-    height: 62px;
+    height: 63px;
     text-align: center;
     line-height: 62px;
     color: $color-text;
@@ -49,17 +72,28 @@ a.logo {
     height: 100%;
     background: $bgr-sidebar;
     @media screen and (min-width: 768px) {
-    	width: 250px;
+    	width: 265px;
 	}
 	
     .logo-icon {
-	    margin-right: 5px;
+	    // margin-right: 5px;
+        img{
+            @media screen and (min-width: 768px) {
+                height: 50px;
+            }
+        }
 	}
-	.logo-text{
-		@media screen and (max-width: 1169px) {
-			// display: none;
-		}
-	}
+	
+}
+.logo-text{
+    display: block;
+    img {
+        max-width: 175px;
+        height: auto;
+    }
+    @media screen and (max-width: 1169px) {
+        // display: none;
+    }
 }
 .user-account{
 	.title .h6{

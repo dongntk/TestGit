@@ -6,7 +6,6 @@ $(document).ready(function() {
         $(this).find('.icon-arrow-right').toggleClass('icon-menu');
     });
 
-
 	
 	$('.checkout-cart .btnModal').click(function(){		
 		var tab_id = $(this).attr('data-tab');
