@@ -1,0 +1,38 @@
+.qr-code {
+    margin-bottom: 30px;
+}
+.img-qr{
+	img{
+		width: 50%;
+		margin: auto;
+	}
+}
+
+.referral-link{
+	.form-inline{
+		margin-bottom: 30px;
+	}
+	.form-control{
+		width: 250px;
+		height: 29px !important;
+	    padding: 0 10px;
+	    border-radius: 4px;
+	    background-color: #9caac1;
+	    border: 0;
+	    margin-right: 5px;
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    margin-bottom: 8px;
+	    border-radius: 0;
+	    &:focus {
+			box-shadow: none;
+			background-color: #0084d4;
+			color: #ffffff;
+		}
+	}
+	.btn{
+		height: 29px;
+		padding: 0 10px;
+		font-size: 13px;
+	}
+}

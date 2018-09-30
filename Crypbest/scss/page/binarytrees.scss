@@ -1,0 +1,61 @@
+.binarytrees{
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+}
+.topb{
+	width: 50%;
+	height: 180px;
+	margin: auto;
+	position: relative;
+	border: 1px solid $color-border;
+	border-bottom: 0;
+	
+}
+.img-binary{
+	transition: transform .2s;
+	&:hover {
+	    -ms-transform: scale(1.2); /* IE 9 */
+	    -webkit-transform: scale(1.2); /* Safari 3-8 */
+	    transform: scale(1.2); 
+	}
+}
+.topc{
+	.topb{
+		width: 25%;
+		@media (max-width: 991px){
+			height: 140px;
+		}
+	}
+}
+.topd{
+	@media (max-width: 991px){
+		display: none;
+	}
+	.topb{
+		width: 15%;
+		height: 140px;
+	}
+}
+.left-binary{
+	position: absolute;
+    top: 15px;
+    left: -39px;
+    background: #272f3a;
+}
+.right-binary{
+	position: absolute;
+    top: 15px;
+    right: -39px;
+    background: #272f3a;
+}
+.img-binary{
+	.red{
+		color: $color-red;
+	}
+	.name-user{
+		color: #ffffff;
+	    font-size: 14px;
+	    margin: 0;
+	    margin-top: 10px;
+	}
+}

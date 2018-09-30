@@ -12,7 +12,7 @@
     <title>Account</title>
   </head>
   <body>
-    <div id="main-wrapper">
+   <div id="main-wrapper">
       <header id="header" class="topbar d-flex align-items-center justify-content-between">
         <div class="navbar-brand">
           <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
@@ -23,11 +23,7 @@
             <img src="img/logo-light-icon.png" height="35" alt="homepage" class="logo">
             </b>
             <!--End Logo icon -->
-            <!-- Logo text -->
-            <span class="logo-text">
-              <!-- Light Logo text -->
-              <img src="img/logo-light-text.png" height="35" class="logo" alt="homepage">
-            </span>
+            
           </a>
           <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
             <i class="icon-arrow-right icon-menu"></i>
@@ -36,6 +32,7 @@
         <!-- User account dropdown -->
         <div class="user-account dropdown">
           <a id="dropdownAccount" class="dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
             <div class="title d-none d-md-block">
               <h5 class="h6">BPC - 983763</h5>
             </div>
@@ -46,8 +43,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownAccount">
             <div class="triangle-with-shadow"></div>
-            <a class="dropdown-item" href="#"><i class="icon-user"></i>Profile</a>
-            <a class="dropdown-item" href="#"><i class="icon-settings"></i>Setting</a>
+            <a class="dropdown-item" href="profile.html"><i class="icon-user"></i>Profile</a>
+            <a class="dropdown-item" href="setting.html"><i class="icon-settings"></i>Setting</a>
             <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
           </div>
         </div>
@@ -55,14 +52,19 @@
       <!-- /header -->
       <aside class="left-sidebar">
         <div class="account-sidebar">
+          <!-- Logo text -->
+            <span class="logo-text">
+              <!-- Light Logo text -->
+              <img src="img/logo-light-text.png" height="35" class="logo" alt="homepage">
+            </span>
           <p class="name">Akshay kumar</p>
           <p class="lever">Medium</p>
           <p class="hasVeri">Verifile</p>
         </div>
         <nav class="sidebar-nav">
           <ul class="list-unstyled">
-            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
-            <li><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
+            <li><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
+            <li class="active"><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
             <li><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
             <li>
               <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span>networt</span></a>
@@ -83,20 +85,20 @@
           <div class="vallet-item">
             <div class="vallet">
               <h4 class="title-vallet">CASH WALLET</h4>
-              <p class="price-vallet">$115.53869384527</p>
+              <p class="price-vallet">$ 115.53869384527</p>
             </div>
           </div>
           <div class="vallet-item">
             <div class="vallet">
               <h4 class="title-vallet">BBT WALLET</h4>
               <p class="coin-vallet">50 CBT</p>
-              <p class="price-vallet">$0.5</p>
+              <p class="price-vallet">$ 0.5</p>
             </div>
           </div>
           <div class="vallet-item">
             <div class="vallet">
               <h4 class="title-vallet">COMMISSION WALLET</h4>
-              <p class="price-vallet">$0.5</p>
+              <p class="price-vallet">$ 0.5</p>
             </div>
           </div>
           <div class="vallet-item">
@@ -106,20 +108,35 @@
             </div>
           </div>
         </div>
-         <div class="block">
+         <div class="block account-tab">
             <div class="pad-block checkout-cart">               
               <div id="account" class="checkout-item">
-                <div class="content-step">
-                  <div class="select-pay">
-                    <label class="paywith">Choose operation:</label>
-                    <select id="operation" name="operation">
-                      <option value='null'>- choose -</option>
-                      <option value="Deposit">Deposit</option>
-                      <option value="Withdraw">Withdraw</option>
-                      <option value="Transfer">Transfer</option>
-                      <option value="Convert">Convert</option>
-                    </select>
+                <div class="head-step opacity-hide">
+                  <div class="number-step">1</div>
+                  <div class="inform-step">Step 1
+                    <p class="note-step">Choose operation</p>
                   </div>
+                </div>
+                <div class="content-step">
+                <div class="content-inner">
+                    <div class="select-pay">
+                      <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Choose operation:</span></div> 
+                  <div class="col-lg-7 col-sm-7 text-left">
+                        
+                        <select id="operation" name="operation">
+                          <option value='null'>- choose -</option>
+                          <option value="Deposit">Deposit</option>
+                          <option value="Withdraw">Withdraw</option>
+                          <option value="Transfer">Transfer</option>
+                          <option value="Convert">Convert</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step-active">
                   <button id="btn-operation"  class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
                 </div>
               </div>
@@ -131,18 +148,21 @@
                   </div>
                 </div>
                 <div class="content-step">
+                <div class="content-inner">
                   <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount USD:</div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "100"></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right">Enter Amount USD:</div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= "100"></div>
                   </div>
                   <div class="row mt-3 justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Amount BTC:</span></div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">0.123456789</span></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Amount BTC:</span></div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><span class="value-coin">0.123456789</span></div>
                   </div>
-                  <p class="note mt-3">1BTC ~ $6000</p>
-                  
+                  <p class="note mt-3">1BTC ~ $ 6000</p>
+                  </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
-                  <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
+                  <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>               
                 </div>
               </div>
               <div id="Withdraw" class="modal-bot checkout-item hide">
@@ -153,16 +173,24 @@
                   </div>
                 </div>
                 <div class="content-step">
+                <div class="content-inner">
                   <div class="select-pay">
-                    <label class="paywith">Choose from wallet:</label>
-                    <select>
-                      <option value="Cash">Cash Wallet</option>
-                      <option value="Commision">Commision Wallet</option>
-                    </select>
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Choose from wallet:</span></div> 
+                      <div class="col-lg-7 col-sm-7 text-left">                    
+                          <select>
+                            <option value="Cash">Cash Wallet</option>
+                            <option value="Commision">Commision Wallet</option>
+                          </select>
+                      </div>
+                    </div>
                   </div>
-                  
+                  </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="account" class="btnModal btn btn-prev btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="Withdraw-step2" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
+
                 </div>
               </div>
               <div id="Withdraw-step2" class="modal-bot checkout-item hide">
@@ -173,18 +201,21 @@
                   </div>
                 </div>
                 <div class="content-step">
+                <div class="content-inner">
                   <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to withdraw USD:</div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "100"></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right">Enter Amount to withdraw USD:</div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= "100"></div>
                   </div>
                   <div class="row mt-3 mb-3 justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Bitcoin Address:</span></div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">.............</span></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Bitcoin Address:</span></div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><span class="value-coin">.............</span></div>
                   </div>
-                  
+                  </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
-                </div>
+                 </div> 
               </div>
               <div id="Withdraw-step3" class="modal-bot checkout-item hide">
                 <div class="head-step">
@@ -194,20 +225,29 @@
                   </div>
                 </div>
                 <div class="content-step">
-                  <div class="d-flex mb-3 justify-content-center align-items-center">
-                    <div class="title-coin text-right">Enter 2FA:</div> 
-                    <div class="ml-2 text-left"><input type="text" class="form-control" value= "100"></div>
+                <div class="content-inner">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-sm-5 title-coin text-right">Enter 2FA::</div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= "100"></div>
                   </div>
+                </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="Withdraw-step2" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="confirm-email" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
                 </div>
               </div>
               <div id="confirm-email" class="modal-bot checkout-item hide">                
                 <div class="content-step">
-                  <div class="d-flex mb-3 justify-content-center align-items-center">
-                    <div class="title-coin text-right"><i class="icon icon-check"></i></div> 
-                    <div class="ml-2 text-left">We will send a confirmtion email<br>Please then click on the confirmtion link in your email!</div>
+                <div class="content-inner top50">
+                    <div class="d-flex mb-3 justify-content-center align-items-center">
+                      <div class="title-coin text-right"><i class="icon icon-check"></i></div> 
+                      <div class="ml-2 text-left">We will send a confirmtion email<br>Please then click on the confirmtion link in your email!</div>
+                    </div>
                   </div>
+                </div>
+                <div class="step-active">
+                  <button  data-tab="account" class="btnModal btn btn-buy btn-border btn-blue">Perform new operation</button>
                 </div>
               </div>
 
@@ -219,14 +259,21 @@
                   </div>
                 </div>
                  <div class="content-step">
+                <div class="content-inner">
                   <div class="select-pay">
-                    <label class="paywith">Choose from wallet:</label>
-                    <select>
-                      <option value="Cash">Cash Wallet</option>
-                      <option value="Commision">Commision Wallet</option>
-                    </select>
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Choose from wallet:</span></div> 
+                      <div class="col-lg-7 col-sm-7 text-left">                    
+                          <select>
+                            <option value="Cash">Cash Wallet</option>
+                            <option value="Commision">Commision Wallet</option>
+                          </select>
+                      </div>
+                    </div>
                   </div>
-                  
+                  </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="account" class="btnModal btn btn-prev btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="Transfer-step2" class="btnModal btn btn-next btn-border btn-blue">NEXT</button>
                 </div>
@@ -239,16 +286,20 @@
                   </div>
                 </div>
                 <div class="content-step">
+                <div class="content-inner">
                    <p class="note mt-3">You have 2000 USD available for transfer</p>
                   <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to Transfer USD:</div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= ""></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right">Enter Amount to Transfer USD:</div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= ""></div>
                   </div>
                   <div class="row mt-3 mb-3 justify-content-center ">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Username Address:</span></div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= "Kevin"><p class="namefull">Tran Thanh Sang</p></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Username Address:</span></div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= "Kevin">
+                      <p class="namefull"><img class="img-qr" src="img/ajax_loading.gif" alt="Smiley face" height="15"> Tran Thanh Sang</p></div>
                   </div>
-                  
+                  </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
                 </div>
@@ -261,16 +312,20 @@
                   </div>
                 </div>
                 <div class="content-step">
+                <div class="content-inner">
                    <p class="note mt-3">You have 3000 BBT available for convert</p>
                   <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right">Enter Amount to Convert BBT:</div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><input type="text" class="form-control" value= ""></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right">Enter Amount to Convert BBT:</div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><input type="text" class="form-control" value= ""></div>
                   </div>
                   <div class="row mt-3 mb-3 justify-content-center ">
-                    <div class="col-lg-6 col-sm-6 title-coin text-right"><span class="title-coin">Amount USD:</span></div> 
-                    <div class="col-lg-6 col-sm-6 text-left"><span class="value-coin">$10.000</span></div>
+                    <div class="col-lg-5 col-sm-5 title-coin text-right"><span class="title-coin">Amount USD:</span></div> 
+                    <div class="col-lg-7 col-sm-7 text-left"><span class="value-coin">$ 10.000</span></div>
                   </div>
-                  <p class="note mt-3">1BBT ~ $0.001</p>
+                  <p class="note mt-3">1BBT ~ $ 0.001</p>
+                </div>
+                </div>
+                <div class="step-active">
                   <button  data-tab="Withdraw" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
                   <button  data-tab="Withdraw-step3" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>
                 </div>
@@ -285,9 +340,9 @@
                       <tr>
                         <th class="text-center"><span>Transaction</span></th>
                         <th class="text-center"><span>Currency<span></th> 
-              <th class="text-center"><span>USD<span></th> 
-              <th class="text-center"><span>Unit<span></th> 
-                <th class="text-center"><span>Status</span></th>
+                        <th class="text-center"><span>USD<span></th> 
+                        <th class="text-center"><span>Unit<span></th> 
+                          <th class="text-center"><span>Status</span></th>
                         <th class="text-center"><span>Date</span></th>
                         <th class="text-center"><i class="zmdi zmdi-settings icon-settings"></i></th>
                       </tr>
@@ -321,7 +376,7 @@
                       <tr>
                         <td class="text-center">5626125</td>
                         <td class="text-center"><span class="c-orange ">BTC</span></td>
-                        <td class="text-center">$1.000</td>
+                        <td class="text-center">$ 1.000</td>
                         <td class="text-center">0.92836273</td>
                         <td class="text-center"><span class="label label-warning">Pending..</span></td>
                         <td class="text-center">11-05-2016 00:40::35</td>
@@ -330,7 +385,7 @@
                       <tr>
                         <td class="text-center">5626125</td>
                         <td class="text-center"><span class="c-orange ">BTC</span></td>
-                        <td class="text-center">$1.000</td>
+                        <td class="text-center">$ 1.000</td>
                         <td class="text-center">0.92836273</td>
                         <td class="text-center"><span class="label label-warning">Pending..</span></td>
                         <td class="text-center">11-05-2016 00:40::35</td>
@@ -359,7 +414,7 @@
               </div>
               <div class="content-step">
                 <h3 class="name-bot">Basi Bot</h3>
-                <p>Total: <span>$100</span></p>
+                <p>Total: <span>$ 100</span></p>
                 <div class="form-check">
                   <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the above terms and conditions</label>
                 </div>
@@ -385,9 +440,9 @@
             <div id="tab-3a" class="checkout-item hide">
               <div class="head-step"><div class="number-step">3</div><div class="inform-step">Step 3 <p class="note-step">Choose operation</p></div></div>
               <div class="content-step">
-                <p><span class="title-coin">Amount USD:</span> <span class="value-coin">$100</span></p>
-                <p><span class="title-coin">Amount BTC:</span> <span class="value-coin">$100</span>BTC</p>
-                <p class="note">1BTC ~ $6000</p>
+                <p><span class="title-coin">Amount USD:</span> <span class="value-coin">$ 100</span></p>
+                <p><span class="title-coin">Amount BTC:</span> <span class="value-coin">$ 100</span>BTC</p>
+                <p class="note">1BTC ~ $ 6000</p>
                 
                 <button  data-tab="tab-2a" class="btnModal btn btn-buy btn-border btn-blue">PREVIOUS</button>
                 <button  data-tab="tab-4a" class="btnModal btn btn-buy btn-border btn-blue">NEXT</button>

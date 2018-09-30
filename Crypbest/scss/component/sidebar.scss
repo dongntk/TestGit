@@ -10,20 +10,36 @@
                 + .page-wrapper {
                     margin-left: 76px;
                 }
-                &:hover{
-                    width: 203px;
-                   .list-unstyled{
-                        li ul li{
-                            position: relative;
-                            &:before{
-                                display: none;
-                            }
-                            span{
-                                display: inline-block;
-                                opacity: 1;
-                            }
-                        }
-                        li a {
+                // &:hover{
+                //     width: 203px;
+                //    .list-unstyled{
+                //         li ul li{
+                //             position: relative;
+                //             &:before{
+                //                 display: none;
+                //             }
+                //             span{
+                //                 display: inline-block;
+                //                 opacity: 1;
+                //             }
+                //         }
+                //         li a {
+                //             text-align: left;
+                //             &[data-toggle="collapse"]:after {
+                //                 display: inline-block;
+                //             }
+                //             span{
+                //                 display: inline-block;
+                //             }
+                //             i{
+                //                 margin-right: 15px;
+                //             }
+                //         }
+                //     } 
+                // }
+                .list-unstyled >li{
+                    &:hover{
+                        a {
                             text-align: left;
                             &[data-toggle="collapse"]:after {
                                 display: inline-block;
@@ -35,8 +51,9 @@
                                 margin-right: 15px;
                             }
                         }
-                    } 
+                    }
                 }
+                    
                 .list-unstyled{
                     >li >a {
                         text-align: center;
@@ -87,9 +104,9 @@
 }
 .left-sidebar {
     padding: 24px 0px;
-    overflow: auto;
+    // overflow: auto;
     height: calc(100vh - 42px);
-        position: fixed;
+    position: fixed;
     width: 203px;
     left: 0;
     height: 100%;
@@ -182,7 +199,7 @@
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 line-height: 50px;
-                overflow: hidden;
+                // overflow: hidden;
                 transition: all 0.5s;
                 position: relative;
                 white-space: nowrap;

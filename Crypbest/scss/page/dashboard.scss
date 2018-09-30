@@ -94,7 +94,7 @@
 	}
 	.coinlr{
 		color: $color-link;
-		font-size: 13px;
+		font-size: 10px;
 		text-transform: capitalize;
 		margin-bottom: 0;
 	}
@@ -384,6 +384,73 @@
 	}
 
 }
+.account-tab{
+	.opacity-hide{
+		opacity: 0;
+	}
+	.checkout-item{
+		position: relative;
+	}
+	input{
+		max-width: 200px;
+	}
+	.content-inner{
+		padding-top: 30px;
+		position: relative;
+      z-index: 10000;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      top: 25%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      vertical-align: middle;
+      &.top50{
+      	top: 50%;
+      	padding-top: 0;
+      }
+	}
+	.content-step{
+		height: 240px;
+	}
+	.step-active{
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		z-index: 999;
+	}
+}
+.popup-inner{
+	.content-inner{
+		padding-top: 30px;
+		position: relative;
+      z-index: 10000;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      top: 25%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      vertical-align: middle;
+      &.top50{
+      	top: 50%;
+      }
+	}
+	.content-step{
+		height: 290px;
+	}
+	.popup-active{
+		position: absolute;
+		bottom: 30%;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+	}
+}
 .checkout-cart{
 	width: 100%;
 	border: 0;
@@ -395,21 +462,27 @@
 		display: block;
 	}
 	.select-pay{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 30px 0;
 		.paywith{
 			margin-bottom: 0;
 		}
 		select{
-			width: 250px;
+			width: 200px;
 			height: 29px !important;
 		    padding: 0 10px;
 		    border-radius: 4px;
 		    background-color: #9caac1;
 		    border: 0;
-		    margin-left: 20px;
+		    border-radius: 0;
+
+			&:focus {
+				box-shadow: none;
+				background-color: #0084d4;
+				color: #ffffff;
+				option{
+		    		background-color: #9caac1;
+		    		color: #000000;
+		    	}
+			}
 		}
 	}
 	.form-inline{
@@ -425,13 +498,16 @@
 	    margin-right: 5px;
 	    font-size: 13px;
 	    text-transform: uppercase;
-	    &:focus{
-	    	box-shadow: none;
-	    }
+	    border-radius: 0;
+		&:focus {
+			box-shadow: none;
+			background-color: #0084d4;
+			color: #ffffff;
+		}
 	}
 	.btn{
 		height: 29px;
-		padding: 0;
+		padding: 0 10px;
 		font-size: 13px;
 	}
 	.waitting{

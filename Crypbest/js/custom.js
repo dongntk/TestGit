@@ -28,8 +28,10 @@ $(document).ready(function() {
 	  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
 	});
 
-
-	 $("#operation").change(function () {
+	$('#new-tickets').click(function() {
+        $('.support-form').toggle();
+    });
+	$("#operation").change(function () {
         var color = $(this);
         var v = (color.val()); 
         $('#btn-operation').attr( "data-tab", function() {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <title>Bottrading</title>
+    <title>Profile</title>
   </head>
   <body>
     <div id="main-wrapper">
@@ -43,7 +43,7 @@
           <div class="dropdown-menu" aria-labelledby="dropdownAccount">
             <div class="triangle-with-shadow"></div>
             <a class="dropdown-item" href="profile.html"><i class="icon-user"></i>Profile</a>
-            <a class="dropdown-item" href="setting.html"><i class="icon-settings"></i>Setting</a>
+            <a class="dropdown-item active" href="setting.html"><i class="icon-settings"></i>Setting</a>
             <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
           </div>
         </div>
@@ -62,9 +62,9 @@
         </div>
         <nav class="sidebar-nav">
           <ul class="list-unstyled">
-            <li><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
+            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
             <li><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
-            <li class="active"><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
+            <li><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
             <li>
               <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span>networt</span></a>
               <ul id="submenu-1" class="collapse list-unstyled">
@@ -79,66 +79,74 @@
         </nav>
       </aside>
       <div class="page-wrapper">
-        <h4 class="page-title">Bottrading</h4>
-        <div class="block vallet-group">
-          <div class="vallet-item">
-            <div class="vallet">
-              <h4 class="title-vallet">BOT TRADING</h4>
-              <p class="price-vallet">Pending ...</p>
-            </div>
-          </div>
-          <div class="vallet-item">
-            <div class="vallet">
-              <h4 class="title-vallet">TRADING LIMIT</h4>
-              <p class="coin-vallet">$ 10.000</p>
-            </div>
-          </div>
-          <div class="vallet-item">
-            <div class="vallet">
-              <h4 class="title-vallet">WEEKLY PROFIT</h4>
-              <p class="coin-vallet">10%</p>
-            </div>
-          </div>
-          <div class="vallet-item">
-            <div class="vallet">
-              <h4 class="title-vallet">REMEANING DAY</h4>
-              <p class="coin-vallet">365 days</p>
-            </div>
-          </div>
-        </div>
-         <div class="block keyapi">
-          <h4 class="title-block">API</h4>
-          <div class="block-content">
-            <form class="api-form">                                            
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">API KEY</span>
-                      </div>
-                      <input type="text" class="form-control">
+          <h4 class="page-title">Setting</h4>
+          <div class="row">
+              
+              <div class="col-md-6 ">
+                <div class="block">
+                  <div class="block-content">
+                    <h4 class="title-block row">Account Information</h4>
+                    <div class="form-group">
+                        <label class="name-form" >User Name:</label>
+                        <input type="text" class="form-control" value="BBT983763">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="name-form" >Full Name:</label>
+                        <input type="text" class="form-control" value="Terrance arnold">
+                    </div>
+                   
+                    <div class=" form-group">
+                        <label class="name-form" >My BTC Wallet:</label>
+                        <input type="text" class="form-control" value="DHFUERNDKFJSJLFJSLDJFLJSDLFJ">
+                    </div>
+                    <h4 class="title-block row">Change your password</h4>
+                    <div class=" form-group">
+                        <label class="name-form" >Current password:</label>
+                        <input type="password" class="form-control" value="DHFUERNDK">
+                    </div>
+                    <div class=" form-group">
+                        <label class="name-form" >New password:</label>
+                        <input type="password" class="form-control" value="DHFUERNDK">
+                    </div>
+                    <div class=" form-group">
+                        <label class="name-form" >Re-type New password:</label>
+                        <input type="password" class="form-control" value="DHFUERNDK">
+                    </div>
+                    <div class=" form-group">
+                        <label class="name-form" >2FA</label>
+                        <input type="text" class="form-control" value="DHFUERNDKFJSJLFJSLDJFLJSDLFJ">
+                    </div>
+                    <div class=" text-center">
+                     <button class="btn btn-primary bgm-blue btn-md  waves-effect" type="submit">SAVE</button>
+                   </div>
                   </div>
+                  
+                </div>
+
               </div>
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">API SECRET</span>
+              <div class="col-md-6">
+                <div class="block">
+                  <div class="block-content">
+                    <h4 class="title-block row">Two-Factor Authentication</h4>
+                    <div class="qr-code">
+                      <p id="link-qr" class="link-code text-center"></p>
+                      <div class="img-qr" id="qrcode">
                       </div>
-                      <input type="text" class="form-control">
+                    </div>
+                    <div class=" form-group text-center">
+                        <label class="name-form" for="date">Authenticator Code:</label>
+                        <input type="password" class="form-control" value="200.000.000">
+                    </div>
+                    <div class=" text-center">
+
+                      <button class="btn btn-primary bgm-blue btn-md  waves-effect" type="submit">ENABLE 2FA</button>
+                    </div>
                   </div>
-              </div>
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">2FA</span>
-                      </div>
-                      <input type="text" class="form-control">
-                  </div>
-              </div>
-              <div class="form-group p-t-10 text-center">
-                <button type="submit" class="btn btn-primary btn-md ">SAVE</button>
+                </div>
+                
               </div>
           </div>
-        </div>
       </div>
     </div>
     
@@ -152,6 +160,14 @@
     <script>
       $('#activity').DataTable();
     </script> -->
+    <script src="js/qrcode.min.js"></script>
+  
+    <script type="text/javascript">
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "1JJCGAPQ1UXMY5A6",
+      });
+      $('#link-qr').html("<span>" + qrcode._el.title + "</span>");
+    </script>
     <script src="js/custom.js"></script>
     <!-- Main JS-->
   </body>
