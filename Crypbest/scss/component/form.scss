@@ -17,6 +17,15 @@ select{
 	    }
 	}
 }
+textarea.form-control{
+	font-size: 16px;
+	&:focus {
+		box-shadow: none;
+		background-color: #9caac1;
+		color: #ffffff;
+		
+	}
+}
 .input-group-text{
 	padding-top: 0;
 	padding-bottom: 0;

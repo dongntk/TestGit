@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons/favicon.png">
     <!-- Plugin Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
@@ -11,7 +12,7 @@
     <title>Bottrading</title>
   </head>
   <body>
-    <div id="main-wrapper">
+    <div id="main-wrapper" class="show-sidebar">
       <header id="header" class="topbar d-flex align-items-center justify-content-between">
         <div class="navbar-brand">
           <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
@@ -25,7 +26,7 @@
             
           </a>
           <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
-            <i class="icon-arrow-right icon-menu"></i>
+            <i class="icon-arrow-right icon-arrow-left"></i>
           </a>
         </div>
         <!-- User account dropdown -->
@@ -43,6 +44,7 @@
           <div class="dropdown-menu" aria-labelledby="dropdownAccount">
             <div class="triangle-with-shadow"></div>
             <a class="dropdown-item" href="profile.html"><i class="icon-user"></i>Profile</a>
+            <a class="dropdown-item" href="bottelegram.html"><i class="ic-crypbest"></i>Bot Telegram</a>
             <a class="dropdown-item" href="setting.html"><i class="icon-settings"></i>Setting</a>
             <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
           </div>
@@ -58,23 +60,22 @@
             </span>
           <p class="name">Akshay kumar</p>
           <p class="lever">Medium</p>
-          <p class="hasVeri">Verifile</p>
         </div>
         <nav class="sidebar-nav">
-          <ul class="list-unstyled">
-            <li><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
-            <li><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
-            <li class="active"><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
+         <ul class="list-unstyled">
+            <li><a href="dashboard.html"><i class="ic-dashboard"></i><span class="menu-title">Dashboard</span></a></li>
+            <li><a href="account.html"><i class="icon-user"></i><span class="menu-title">Account</span></a></li>
+            <li  class="active"><a href="bottrading.html"><i class="ic-crypbest"></i><span class="menu-title">Bottrading</span></a></li>
             <li>
-              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span>networt</span></a>
+              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span class="menu-title">networt</span></a>
               <ul id="submenu-1" class="collapse list-unstyled">
-                <li><a href="member.html"><span>member</span></a></li>
-                <li><a href="refferal.html"><span>Refferal</span></a></li>
-                <li><a href="binary-trees.html"><span>Binary Trees</span></a></li>
+                <li><a href="member.html"><span class="menusub-title">member</span></a></li>
+                <li><a href="refferal.html"><span class="menusub-title">Refferal</span></a></li>
+                <li><a href="binary-trees.html"><span class="menusub-title">Binary Trees</span></a></li>
               </ul>
             </li>
-            <li><a href="trading-platform.html"><i class="ic-tranding"></i><span>trading platform</span></a></li>
-            <li><a href="support-tickets.html"><i class="ic-support"></i><span>support tickets</span></a></li>
+            <li><a href="trading-platform.html"><i class="ic-tranding"></i><span class="menu-title">trading platform</span></a></li>
+            <li><a href="support-tickets.html"><i class="ic-support"></i><span class="menu-title">support tickets</span></a></li>
           </ul>
         </nav>
       </aside>
@@ -106,37 +107,119 @@
             </div>
           </div>
         </div>
-         <div class="block keyapi">
-          <h4 class="title-block">API</h4>
+        
+        <h4 class="page-title">Api Key</h4>
+        <button type="button" class="btn btn-primary mb-3" id="new-tickets">
+        <i class="icon-plus"></i> Add Api Key
+        </button>
+        <div class="block support-form keyapi">
+          <h4 class="title-block">Add Api Key <span class="ml-3"><img src="img/Bittrex.png" height="30px"></span></h4>
           <div class="block-content">
-            <form class="api-form">                                            
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">API KEY</span>
-                      </div>
-                      <input type="text" class="form-control">
+            <div class="row">
+              
+              <div class="col-md-6">
+            
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xl-3">
+                      <label for="name">Name:</label>
+                    </div>
+                    <div class="col-xl-9">
+                      <input type="text" class="form-control" id="name">
+                    </div>
                   </div>
-              </div>
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">API SECRET</span>
-                      </div>
-                      <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xl-3">
+                      <label for="apikey">Api key:</label>
+                    </div>
+                    <div class="col-xl-9">
+                      <input type="text" class="form-control" id="apikey">
+                    </div>
                   </div>
-              </div>
-              <div class="form-group mb-3">
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">2FA</span>
-                      </div>
-                      <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xl-3">
+                      <label for="apisecret">Api secret:</label>
+                    </div>
+                    <div class="col-xl-9">
+                      <input type="text" class="form-control" id="apisecret">
+                    </div>
                   </div>
-              </div>
-              <div class="form-group p-t-10 text-center">
-                <button type="submit" class="btn btn-primary btn-md ">SAVE</button>
-              </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xl-3">
+                      <label for="2fa">2fa:</label>
+                    </div>
+                    <div class="col-xl-9">
+                      <input type="text" class="form-control" id="2fa">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xl-3"></div>
+                    <div class="col-xl-9 text-right">
+                      <button type="submit" class="btn btn-primary">SAVE</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div></div>
+          </div>          
+        </div>
+        <div class="block">
+          <h4 class="title-block">Exchange Api key information</h4>
+          <div class="block-content table-responsive">
+            <table id="activity" class="table table-striped table-bordered" style="width:100%">
+              <thead>
+                <tr>
+                  <th class="text-center"><span>Exchange</span></th>
+                  <th class="text-center"><span>Name<span></th>
+                  <th class="text-center"><span>Api key<span></th>
+                  <th class="text-center"><span>Api Secret<span></th>
+                </tr>
+                
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center"><img src="img/Bittrex.png" height="15px"></td>
+                  <td class="text-center">N/A</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                  <td class="text-center">N/A</td>
+                </tr>
+                <tr>
+                  <td class="text-center"><img src="img/Bittrex.png" height="15px"></td>
+                  <td class="text-center">dinhthuy</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                </tr>
+                <tr>
+                  <td class="text-center"><img src="img/Bittrex.png" height="15px"></td>
+                  <td class="text-center">dinhthuy1</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                </tr>
+                <tr>
+                  <td class="text-center"><img src="img/Bittrex.png" height="15px"></td>
+                  <td class="text-center">dinhthuy3333</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                </tr>
+                <tr>
+                  <td class="text-center"><img src="img/Bittrex.png" height="15px"></td>
+                  <td class="text-center">dinhthuy4444</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                  <td class="text-center">X7Hkjksjjskdjfkj***********</td>
+                </tr>
+                
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

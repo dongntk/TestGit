@@ -12,7 +12,7 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div id="main-wrapper">
+    <div id="main-wrapper" class="show-sidebar">
       <header id="header" class="topbar d-flex align-items-center justify-content-between">
         <div class="navbar-brand">
           <a href="#" class="nav-toggle d-block d-md-none"><i class="icon-close icon-menu"></i></a>
@@ -26,7 +26,7 @@
             
           </a>
           <a class="nav-toggle d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">
-            <i class="icon-arrow-right icon-menu"></i>
+            <i class="icon-arrow-right icon-arrow-left"></i>
           </a>
         </div>
         <!-- User account dropdown -->
@@ -44,6 +44,7 @@
           <div class="dropdown-menu" aria-labelledby="dropdownAccount">
             <div class="triangle-with-shadow"></div>
             <a class="dropdown-item" href="profile.html"><i class="icon-user"></i>Profile</a>
+            <a class="dropdown-item" href="bottelegram.html"><i class="ic-crypbest"></i>Bot Telegram</a>
             <a class="dropdown-item" href="setting.html"><i class="icon-settings"></i>Setting</a>
             <a class="dropdown-item" href="#"><i class="icon-power-off"></i>Logout</a>
           </div>
@@ -59,23 +60,22 @@
             </span>
           <p class="name">Akshay kumar</p>
           <p class="lever">Medium</p>
-          <p class="hasVeri">Verifile</p>
         </div>
         <nav class="sidebar-nav">
          <ul class="list-unstyled">
-            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i><span>Dashboard</span></a></li>
-            <li><a href="account.html"><i class="icon-user"></i><span>Account</span></a></li>
-            <li><a href="bottrading.html"><i class="ic-crypbest"></i><span>Bottrading</span></a></li>
+            <li class="active"><a href="dashboard.html"><i class="ic-dashboard"></i><span class="menu-title">Dashboard</span></a></li>
+            <li><a href="account.html"><i class="icon-user"></i><span class="menu-title">Account</span></a></li>
+            <li><a href="bottrading.html"><i class="ic-crypbest"></i><span class="menu-title">Bottrading</span></a></li>
             <li>
-              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span>networt</span></a>
+              <a href="#submenu-1" aria-expanded="false" data-toggle="collapse"><i class="ic-network"></i><span class="menu-title">networt</span></a>
               <ul id="submenu-1" class="collapse list-unstyled">
-                <li><a href="member.html"><span>member</span></a></li>
-                <li><a href="refferal.html"><span>Refferal</span></a></li>
-                <li><a href="binary-trees.html"><span>Binary Trees</span></a></li>
+                <li><a href="member.html"><span class="menusub-title">member</span></a></li>
+                <li><a href="refferal.html"><span class="menusub-title">Refferal</span></a></li>
+                <li><a href="binary-trees.html"><span class="menusub-title">Binary Trees</span></a></li>
               </ul>
             </li>
-            <li><a href="trading-platform.html"><i class="ic-tranding"></i><span>trading platform</span></a></li>
-            <li><a href="support-tickets.html"><i class="ic-support"></i><span>support tickets</span></a></li>
+            <li><a href="trading-platform.html"><i class="ic-tranding"></i><span class="menu-title">trading platform</span></a></li>
+            <li><a href="support-tickets.html"><i class="ic-support"></i><span class="menu-title">support tickets</span></a></li>
           </ul>
         </nav>
       </aside>

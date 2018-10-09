@@ -3,9 +3,12 @@ $(document).ready(function() {
 	$('.nav-toggle').click(function() {
         $('#main-wrapper').toggleClass('show-sidebar');
         $(this).find('.icon-close').toggleClass('icon-menu');
-        $(this).find('.icon-arrow-right').toggleClass('icon-menu');
+        $(this).find('.icon-arrow-left').toggleClass('icon-arrow-right');
     });
-
+    $('.delete').click(function() {
+       $(this).parent().remove();
+    });
+	
 	
 	$('.checkout-cart .btnModal').click(function(){		
 		var tab_id = $(this).attr('data-tab');
@@ -30,6 +33,14 @@ $(document).ready(function() {
 
 	$('#new-tickets').click(function() {
         $('.support-form').toggle();
+    });
+    $('.support-telegram').hide();
+    $('.swich-warp input').click(function() {
+    	if ($(this).is(':checked')) {
+    		$(this).parent().parent().parent().find('.support-telegram').show();
+    	}else{
+    		$(this).parent().parent().parent().find('.support-telegram').hide();
+    	}
     });
 	$("#operation").change(function () {
         var color = $(this);
