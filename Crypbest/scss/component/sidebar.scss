@@ -5,7 +5,10 @@
     &.show-sidebar {
         .account-sidebar{
             .name{
-                padding-top: 60px;
+                display: none;
+            }
+            .lever{
+                padding-top: 65px;
             }
         }
         .left-sidebar {
@@ -188,10 +191,11 @@
     }
     .name{
         text-transform: uppercase;
-        padding-top: 15px;
+        word-break: break-all;
     }
     .lever{
         color: $color-link;
+        padding-top: 15px;
     }
     .hasVeri{
         color: $color-link;

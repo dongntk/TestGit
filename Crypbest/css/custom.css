@@ -1442,7 +1442,9 @@ a.logo {
   width: 100%;
   overflow: hidden; }
   #main-wrapper.show-sidebar .account-sidebar .name {
-    padding-top: 60px; }
+    display: none; }
+  #main-wrapper.show-sidebar .account-sidebar .lever {
+    padding-top: 65px; }
   #main-wrapper.show-sidebar .left-sidebar {
     z-index: 49;
     overflow: initial; }
@@ -1574,9 +1576,10 @@ a.logo {
     margin-bottom: 0; }
   .account-sidebar .name {
     text-transform: uppercase;
-    padding-top: 15px; }
+    word-break: break-all; }
   .account-sidebar .lever {
-    color: #0084d4; }
+    color: #0084d4;
+    padding-top: 15px; }
   .account-sidebar .hasVeri {
     color: #0084d4; }
 
@@ -1843,14 +1846,15 @@ body {
 .btn {
   min-width: 70px;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 0;
   font-style: initial;
   text-transform: capitalize; }
   .btn:hover {
     opacity: 0.9; }
   .btn:focus {
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    outline: none; }
   .btn.btn-blue {
     color: #ffffff;
     background-color: #0084d4; }
@@ -2273,8 +2277,8 @@ textarea.form-control {
     margin-bottom: 0; }
   .vallet .price-vallet {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 12px;
+    text-transform: capitalize;
     margin-bottom: 0; }
   .vallet .coinlr {
     color: #0084d4;
@@ -2533,7 +2537,8 @@ textarea.form-control {
   opacity: 0; }
 
 .account-tab .checkout-item {
-  position: relative; }
+  position: relative;
+  z-index: 0; }
 
 .account-tab input {
   max-width: 200px; }
@@ -2597,6 +2602,11 @@ textarea.form-control {
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none; }
+  .checkout-cart .pop-qr img {
+    height: 140px;
+    margin: auto; }
+  .checkout-cart .text-wait {
+    margin-left: 8px; }
   .checkout-cart .checkout-item {
     display: block; }
     .checkout-cart .checkout-item.hide {
@@ -2643,7 +2653,7 @@ textarea.form-control {
     font-size: 13px; }
   .checkout-cart .waitting {
     margin-top: 30px; }
-    .checkout-cart .waitting .img-qr {
+    .checkout-cart .waitting img {
       margin-right: 5px; }
 
 .login-bg {
