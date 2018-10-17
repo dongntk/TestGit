@@ -1514,7 +1514,7 @@ a.logo {
             opacity: 1; } }
     @media screen and (max-width: 767px) {
       #main-wrapper.show-sidebar .left-sidebar {
-        left: 0;
+        left: -203px;
         -webkit-transition: .2s ease-in;
         -o-transition: .2s ease-in;
         transition: .2s ease-in; }
@@ -1548,16 +1548,11 @@ a.logo {
   @media screen and (max-width: 767px) {
     .left-sidebar {
       width: 203px;
-      left: -203px;
+      left: 0;
+      z-index: 9;
       padding-top: 64px; }
       .left-sidebar .logo-text {
         display: none; }
-      .left-sidebar + .page-wrapper {
-        margin-left: 0; } }
-  @media screen and (max-width: 576px) {
-    .left-sidebar {
-      width: 100%;
-      left: -100%; }
       .left-sidebar + .page-wrapper {
         margin-left: 0; } }
   @media screen and (min-width: 768px) and (max-width: 1169px) {
@@ -1572,6 +1567,9 @@ a.logo {
   padding: 10px;
   font-style: italic;
   padding-top: 0; }
+  @media screen and (max-width: 767px) {
+    .account-sidebar {
+      padding-top: 30px; } }
   .account-sidebar p {
     margin-bottom: 0; }
   .account-sidebar .name {
@@ -2069,6 +2067,9 @@ body {
   .swich-warp .slider.round:before {
     border-radius: 50%; }
 
+.pop-qr img {
+  height: 140px; }
+
 .modal-content {
   background-color: #292d34; }
   .modal-content .modal-header {
@@ -2557,11 +2558,11 @@ textarea.form-control {
   text-align: center;
   vertical-align: middle; }
   .account-tab .content-inner.top50 {
-    top: 50%;
+    top: 45%;
     padding-top: 0; }
 
 .account-tab .content-step {
-  height: 240px; }
+  height: 360px; }
 
 .account-tab .step-active {
   position: absolute;
@@ -2652,7 +2653,7 @@ textarea.form-control {
     padding: 0 10px;
     font-size: 13px; }
   .checkout-cart .waitting {
-    margin-top: 30px; }
+    margin-top: 15px; }
     .checkout-cart .waitting img {
       margin-right: 5px; }
 

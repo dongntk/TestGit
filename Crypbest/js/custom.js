@@ -10,11 +10,7 @@ $(document).ready(function() {
     });
 	
 	
-	$('.checkout-cart .btnModal').click(function(){		
-		var tab_id = $(this).attr('data-tab');
-		$(this).parent().parent().addClass('hide');
-		$("#"+tab_id).removeClass('hide');
-	});
+	
 	$('.close-modal').click(function(){
 		$('.checkout-item').addClass('hide');
 	});
@@ -49,6 +45,107 @@ $(document).ready(function() {
 		  return "" + v;
 		});
     });
+	// $('.popup-active button.btn-next').click(function(event) {
+
+ //   		var select = $(this).parent().parent().find('select').val();
+ //        var input = $(this).parent().parent().find('input').val();        
+	//     var inputCheck = $(this).parent().parent().find('input[type="checkbox"]');
+	//     $(this).parent().parent().find('select').parent().remove('<p class="error" style="margin-bottom: 0; margin-top: 8px; color: red;"> No empty</p>');
+ //        $(this).parent().parent().find('input').parent().remove('<p class="error" style="margin-bottom: 0; margin-top: 8px; color: red;"> No empty</p>');
+        
+ //        if (!(select == 'null') && !(inputCheck.prop('checked', false) === true)){            
+ //            alert('1');
+ //        	var tab_id = $(this).attr('data-tab');
+	// 		$(this).parent().parent().addClass('hide');
+	// 		$("#"+tab_id).removeClass('hide');
+	// 		}
+ //        else {
+ //        	alert('0');
+
+ //        	$(this).parent().parent().find('select').parent().append('<p class="error" style="margin-bottom: 0; margin-top: 8px; color: red;"> No empty</p>');
+ //        	$(this).parent().parent().find('input').parent().append('<p class="error" style="margin-bottom: 0; margin-top: 8px; color: red;"> No empty</p>');
+ //        }
+	    
+ //    });
+ 	$('.step-active button.btn-prev').click(function(event) {	
+		var tab_id = $(this).attr('data-tab');
+		$(this).parent().parent().addClass('hide');
+		$("#"+tab_id).removeClass('hide');
+		$('.haserror').css("padding-top", "0");
+	});
+
+
+
+	$('.error-mes').hide();
+	$('.error-mes').css("color", "red");
+    $('.popup-active button.btn-next').parent().parent().find('select').parent().addClass('haserror');
+    $('.step-active button.btn-next').parent().parent().find('select').parent().addClass('haserror');
+    $('.step-active button.btn-next').parent().parent().find('input').parent().addClass('haserror');
+    $('.step-active button.btn-next').click(function(event) {
+
+   		var select = $(this).parent().parent().find('select').val();
+        var input = $(this).parent().parent().find('input').val();  
+   		
+   		if ((select == 'null')){
+   			$(this).parent().parent().find('.error-mes').show();
+   			$('.haserror').css("padding-top", "20px");
+			}
+        else if ((input == 0)){
+   			$(this).parent().parent().find('.error-mes').show();
+   			$('.haserror').css("padding-top", "20px");
+			}
+        else {
+            $('.error-mes').hide();
+            $('.haserror').css("padding-top", "0");
+        	var tab_id = $(this).attr('data-tab');
+			$(this).parent().parent().addClass('hide');
+			$("#"+tab_id).removeClass('hide');
+        }
+	    
+    });
+
+	$('.popup-active button.btn-prev').click(function(event) {	
+		var tab_id = $(this).attr('data-tab');
+		$(this).parent().parent().addClass('hide');
+		$("#"+tab_id).removeClass('hide');
+	});
+
+
+
+	var $input = $('.uncheck').find('input');
+	$input.removeAttr("checked");
+	$('.popup-active button.btn-next').hide();
+	$input.change(function () 
+	{
+	    if ($input.is(":checked")){
+            $('.popup-active button.btn-next').show();
+	    }
+	    else{	
+			$('.popup-active button.btn-next').hide();
+	    }
+	});
+    $('.popup-active button.btn-next').click(function(event) {
+
+   		var select = $(this).parent().parent().find('select').val();
+
+   		if ((select == 'null')) {
+   			$(this).parent().parent().find('.error-mes').show();
+   				$('.haserror').css("padding-top", "20px");
+        	}
+        else {
+            $('.error-mes').hide();
+            $('.haserror').css("padding-top", "0");
+        	var tab_id = $(this).attr('data-tab');
+			$(this).parent().parent().addClass('hide');
+			$("#"+tab_id).removeClass('hide');
+        }
+	    
+
+		
+    });
+
+
+    
 });
 
 function operation() {

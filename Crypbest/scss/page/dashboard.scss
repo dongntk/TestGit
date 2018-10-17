@@ -408,12 +408,12 @@
       text-align: center;
       vertical-align: middle;
       &.top50{
-      	top: 50%;
+      	top: 45%;
       	padding-top: 0;
       }
 	}
 	.content-step{
-		height: 240px;
+		height: 360px;
 	}
 	.step-active{
 		position: absolute;
@@ -523,7 +523,7 @@
 		font-size: 13px;
 	}
 	.waitting{
-		margin-top: 30px;
+		margin-top: 15px;
 		img{
 			margin-right: 5px;
 		}

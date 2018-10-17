@@ -121,7 +121,7 @@
                 }
             }
             @media screen and (max-width: 767px) {
-                left: 0;
+                left: -203px ;
                 transition: .2s ease-in;
                 + .page-wrapper {
                    margin-left: 0;
@@ -156,7 +156,8 @@
 	}
     @media screen and (max-width: 767px) {
         width: 203px;
-        left: -203px ;
+        left: 0 ;
+        z-index: 9;
         padding-top: 64px;
         .logo-text{
             display: none;
@@ -165,13 +166,7 @@
             margin-left: 0;
         }
     }
-    @media screen and (max-width: 576px) {
-        width: 100%;
-        left: -100%;
-        + .page-wrapper {
-            margin-left: 0;
-        }
-    }
+   
     @media screen and (min-width: 768px) and (max-width: 1169px) {
         left: 0;
         + .page-wrapper {
@@ -186,6 +181,9 @@
     padding: 10px;
     font-style: italic;
     padding-top: 0;
+    @media screen and (max-width: 767px) {
+        padding-top: 30px;
+    }
     p{
         margin-bottom: 0;
     }
